@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pflanzenart wählen",
+        "description": "Wähle eine Pflanze aus der Bibliothek.",
+        "data": {
+          "plant_species": "Pflanzenart"
+        }
+      },
+      "details": {
+        "title": "Pflanzendetails",
+        "description": "Gib deiner Pflanze einen Namen und Standort.",
+        "data": {
+          "plant_name": "Pflanzenname",
+          "location": "Standort / Raum"
+        }
+      },
+      "entities": {
+        "title": "Sensoren verknüpfen",
+        "description": "Verknüpfe deine bestehenden Zigbee2MQTT-Sensoren mit dieser Pflanze.",
+        "data": {
+          "temperature": "Temperatursensor",
+          "soil_moisture": "Bodenfeuchtesensor",
+          "battery": "Batteriesensor"
+        }
+      },
+      "care": {
+        "title": "Pflegeaufgaben",
+        "description": "Konfiguriere Pflegeaufgaben und ihre Intervalle. Deaktiviere Aufgaben die du nicht brauchst."
+      }
+    }
+  }
+}

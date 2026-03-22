@@ -1,0 +1,775 @@
+[
+  {
+    "id": "monstera_deliciosa",
+    "common_name": "Monstera",
+    "scientific_name": "Monstera deliciosa",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Monstera_deliciosa2.jpg/220px-Monstera_deliciosa2.jpg",
+    "temperature": { "min": 18, "max": 30 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "epipremnum_aureum",
+    "common_name": "Efeutute",
+    "scientific_name": "Epipremnum aureum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Epipremnum_aureum_31082012.jpg/220px-Epipremnum_aureum_31082012.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 35, "max": 55 },
+    "light": "Halbschattig bis hell, keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "sansevieria_trifasciata",
+    "common_name": "Bogenhanf",
+    "scientific_name": "Sansevieria trifasciata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_plant.jpg/220px-Snake_plant.jpg",
+    "temperature": { "min": 15, "max": 30 },
+    "soil_moisture": { "min": 15, "max": 35 },
+    "light": "Schattig bis sonnig. Sehr anpassungsfähig.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "chlorophytum_comosum",
+    "common_name": "Grünlilie",
+    "scientific_name": "Chlorophytum comosum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chlorophytum_comosum_%27Vittatum%27_2.jpg/220px-Chlorophytum_comosum_%27Vittatum%27_2.jpg",
+    "temperature": { "min": 12, "max": 27 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "repot", "name": "Umtopfen", "icon": "mdi:pot", "interval_days": 365 }
+    ]
+  },
+  {
+    "id": "spathiphyllum",
+    "common_name": "Einblatt",
+    "scientific_name": "Spathiphyllum wallisii",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Spathiphyllum_cochlearispathum_RTBG.jpg/220px-Spathiphyllum_cochlearispathum_RTBG.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten bis Schatten. Kein direktes Sonnenlicht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "ficus_lyrata",
+    "common_name": "Geigenfeige",
+    "scientific_name": "Ficus lyrata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ficus_lyrata_01_by_Line1.jpg/220px-Ficus_lyrata_01_by_Line1.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Keine Mittagssonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 10 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 7 }
+    ]
+  },
+  {
+    "id": "ficus_elastica",
+    "common_name": "Gummibaum",
+    "scientific_name": "Ficus elastica",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Starr_080117-1762_Ficus_elastica.jpg/220px-Starr_080117-1762_Ficus_elastica.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 35, "max": 55 },
+    "light": "Helles, indirektes Licht bis Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 10 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "aloe_vera",
+    "common_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inridge.jpg/220px-Aloe_vera_flower_inridge.jpg",
+    "temperature": { "min": 12, "max": 30 },
+    "soil_moisture": { "min": 10, "max": 30 },
+    "light": "Volle Sonne bis heller Standort.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 },
+      { "id": "repot", "name": "Umtopfen", "icon": "mdi:pot", "interval_days": 730 }
+    ]
+  },
+  {
+    "id": "ocimum_basilicum",
+    "common_name": "Basilikum",
+    "scientific_name": "Ocimum basilicum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/220px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+    "temperature": { "min": 18, "max": 30 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Volle Sonne, mindestens 6 Stunden täglich.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 2 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 7 }
+    ]
+  },
+  {
+    "id": "rosmarinus_officinalis",
+    "common_name": "Rosmarin",
+    "scientific_name": "Salvia rosmarinus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rosmarinus_officinalis133095382.jpg/220px-Rosmarinus_officinalis133095382.jpg",
+    "temperature": { "min": 10, "max": 28 },
+    "soil_moisture": { "min": 20, "max": 40 },
+    "light": "Volle Sonne. Sehr lichthungrig.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "phalaenopsis",
+    "common_name": "Orchidee",
+    "scientific_name": "Phalaenopsis spp.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Phalaenopsis_LIII.jpg/220px-Phalaenopsis_LIII.jpg",
+    "temperature": { "min": 18, "max": 27 },
+    "soil_moisture": { "min": 30, "max": 50 },
+    "light": "Helles, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "echeveria",
+    "common_name": "Echeverie",
+    "scientific_name": "Echeveria spp.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Echeveria_glauca.jpg/220px-Echeveria_glauca.jpg",
+    "temperature": { "min": 10, "max": 30 },
+    "soil_moisture": { "min": 10, "max": 25 },
+    "light": "Volle Sonne. Möglichst viel direktes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "nephrolepis_exaltata",
+    "common_name": "Schwertfarn",
+    "scientific_name": "Nephrolepis exaltata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Nephrolepis_exaltata_in_a_greenhouse.jpg/220px-Nephrolepis_exaltata_in_a_greenhouse.jpg",
+    "temperature": { "min": 16, "max": 26 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "philodendron_scandens",
+    "common_name": "Herzblatt-Philodendron",
+    "scientific_name": "Philodendron hederaceum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Philodendron_hederaceum_var._oxycardium_%28Schott%29_Bunting.jpg/220px-Philodendron_hederaceum_var._oxycardium_%28Schott%29_Bunting.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles bis mittleres indirektes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "calathea_orbifolia",
+    "common_name": "Korbmarante",
+    "scientific_name": "Calathea orbifolia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Calathea_Orbifolia.jpg/220px-Calathea_Orbifolia.jpg",
+    "temperature": { "min": 18, "max": 26 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten, kein direktes Sonnenlicht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "dracaena_marginata",
+    "common_name": "Drachenbaum",
+    "scientific_name": "Dracaena marginata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Starr_080117-1803_Dracaena_marginata.jpg/220px-Starr_080117-1803_Dracaena_marginata.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 30, "max": 50 },
+    "light": "Helles, indirektes Licht. Verträgt auch Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "zamioculcas_zamiifolia",
+    "common_name": "Zamioculcas",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Zamioculcas_zamiifolia_2.jpg/220px-Zamioculcas_zamiifolia_2.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 15, "max": 35 },
+    "light": "Schattig bis hell. Sehr tolerant gegenüber wenig Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "begonia_rex",
+    "common_name": "Königsbegonie",
+    "scientific_name": "Begonia rex",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Begonia_Rex_-_Leaf.jpg/220px-Begonia_Rex_-_Leaf.jpg",
+    "temperature": { "min": 16, "max": 26 },
+    "soil_moisture": { "min": 45, "max": 65 },
+    "light": "Helles, indirektes Licht. Keine Mittagssonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "ficus_benjamina",
+    "common_name": "Birkenfeige",
+    "scientific_name": "Ficus benjamina",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ficus_benjamina2.jpg/220px-Ficus_benjamina2.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Standortwechsel vermeiden.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 90 }
+    ]
+  },
+  {
+    "id": "cactus_mammillaria",
+    "common_name": "Warzenkaktus",
+    "scientific_name": "Mammillaria spp.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mammillaria_mystax_1.jpg/220px-Mammillaria_mystax_1.jpg",
+    "temperature": { "min": 8, "max": 35 },
+    "soil_moisture": { "min": 5, "max": 20 },
+    "light": "Volle Sonne. So viel Licht wie möglich.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "lavandula_angustifolia",
+    "common_name": "Lavendel",
+    "scientific_name": "Lavandula angustifolia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Single_laridge_702702.jpg/220px-Single_laridge_702702.jpg",
+    "temperature": { "min": 10, "max": 30 },
+    "soil_moisture": { "min": 20, "max": 40 },
+    "light": "Volle Sonne. Mindestens 6 Stunden direkt.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 90 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "mentha_spicata",
+    "common_name": "Minze",
+    "scientific_name": "Mentha spicata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mentha_spicata_-_Spearmint_2.jpg/220px-Mentha_spicata_-_Spearmint_2.jpg",
+    "temperature": { "min": 12, "max": 28 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Helles Licht bis Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "pilea_peperomioides",
+    "common_name": "Ufopflanze",
+    "scientific_name": "Pilea peperomioides",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Pilea_peperomioides_2.jpg/220px-Pilea_peperomioides_2.jpg",
+    "temperature": { "min": 14, "max": 26 },
+    "soil_moisture": { "min": 35, "max": 55 },
+    "light": "Helles, indirektes Licht. Keine pralle Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 7 }
+    ]
+  },
+  {
+    "id": "crassula_ovata",
+    "common_name": "Geldbaum",
+    "scientific_name": "Crassula ovata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Crassula_ovata_-_Jade_plant_-_2.jpg/220px-Crassula_ovata_-_Jade_plant_-_2.jpg",
+    "temperature": { "min": 10, "max": 28 },
+    "soil_moisture": { "min": 15, "max": 35 },
+    "light": "Volle Sonne bis helles indirektes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "hedera_helix",
+    "common_name": "Efeu",
+    "scientific_name": "Hedera helix",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hedera_helix1.jpg/220px-Hedera_helix1.jpg",
+    "temperature": { "min": 10, "max": 22 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Halbschattig. Verträgt auch Schatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "alocasia_polly",
+    "common_name": "Pfeilblatt",
+    "scientific_name": "Alocasia amazonica",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alocasia_amazonica_1.jpg/220px-Alocasia_amazonica_1.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Helles, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 10 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "maranta_leuconeura",
+    "common_name": "Pfeilwurz",
+    "scientific_name": "Maranta leuconeura",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Maranta_leuconeura2.jpg/220px-Maranta_leuconeura2.jpg",
+    "temperature": { "min": 18, "max": 27 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten. Kein direktes Sonnenlicht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "asplenium_nidus",
+    "common_name": "Nestfarn",
+    "scientific_name": "Asplenium nidus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Asplenium_nidus_2.jpg/220px-Asplenium_nidus_2.jpg",
+    "temperature": { "min": 18, "max": 27 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten, indirektes Licht. Keine Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "dieffenbachia",
+    "common_name": "Dieffenbachie",
+    "scientific_name": "Dieffenbachia seguine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dieffenbachia_seguine_-_Dumb_Cane.jpg/220px-Dieffenbachia_seguine_-_Dumb_Cane.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "anthurium",
+    "common_name": "Flamingoblume",
+    "scientific_name": "Anthurium andraeanum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Anthurium_andraeanum_1.jpg/220px-Anthurium_andraeanum_1.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 45, "max": 65 },
+    "light": "Helles, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "tradescantia_zebrina",
+    "common_name": "Zebrakraut",
+    "scientific_name": "Tradescantia zebrina",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tradescantia_zebrina_1.jpg/220px-Tradescantia_zebrina_1.jpg",
+    "temperature": { "min": 14, "max": 26 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht für lebhafte Farben.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "peperomia_obtusifolia",
+    "common_name": "Zwergpfeffer",
+    "scientific_name": "Peperomia obtusifolia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Peperomia_obtusifolia_2.jpg/220px-Peperomia_obtusifolia_2.jpg",
+    "temperature": { "min": 16, "max": 27 },
+    "soil_moisture": { "min": 30, "max": 50 },
+    "light": "Helles, indirektes Licht bis Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "schefflera_arboricola",
+    "common_name": "Strahlenaralie",
+    "scientific_name": "Schefflera arboricola",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Schefflera_arboricola_1-OB9.jpg/220px-Schefflera_arboricola_1-OB9.jpg",
+    "temperature": { "min": 14, "max": 26 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Verträgt auch Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "haworthia_fasciata",
+    "common_name": "Zebra-Haworthie",
+    "scientific_name": "Haworthia fasciata",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Haworthia_fasciata_%28Baker%29.jpg/220px-Haworthia_fasciata_%28Baker%29.jpg",
+    "temperature": { "min": 10, "max": 30 },
+    "soil_moisture": { "min": 10, "max": 25 },
+    "light": "Helles Licht, etwas direkte Sonne möglich.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "calathea_makoyana",
+    "common_name": "Pfauenpflanze",
+    "scientific_name": "Calathea makoyana",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Calathea_makoyana.jpg/220px-Calathea_makoyana.jpg",
+    "temperature": { "min": 18, "max": 27 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten. Kein direktes Sonnenlicht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "dracaena_fragrans",
+    "common_name": "Drachenbaum Massangeana",
+    "scientific_name": "Dracaena fragrans",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Dracaena_fragrans_%28cornstalk_dracaena%29.jpg/220px-Dracaena_fragrans_%28cornstalk_dracaena%29.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 30, "max": 50 },
+    "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "opuntia_microdasys",
+    "common_name": "Feigenkaktus",
+    "scientific_name": "Opuntia microdasys",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Opuntia_microdasys_2.jpg/220px-Opuntia_microdasys_2.jpg",
+    "temperature": { "min": 8, "max": 35 },
+    "soil_moisture": { "min": 5, "max": 20 },
+    "light": "Volle Sonne. Liebt direkte Sonneneinstrahlung.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "syngonium_podophyllum",
+    "common_name": "Purpurtute",
+    "scientific_name": "Syngonium podophyllum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Syngonium_podophyllum_%282%29.jpg/220px-Syngonium_podophyllum_%282%29.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Keine pralle Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "hoya_carnosa",
+    "common_name": "Wachsblume",
+    "scientific_name": "Hoya carnosa",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hoya_carnosa_Enfoque_2011-7-5_SiessaRivCamp.jpg/220px-Hoya_carnosa_Enfoque_2011-7-5_SiesaRivCamp.jpg",
+    "temperature": { "min": 14, "max": 28 },
+    "soil_moisture": { "min": 25, "max": 45 },
+    "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "yucca_elephantipes",
+    "common_name": "Yucca-Palme",
+    "scientific_name": "Yucca elephantipes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Yucca_elephantipes_01.jpg/220px-Yucca_elephantipes_01.jpg",
+    "temperature": { "min": 10, "max": 30 },
+    "soil_moisture": { "min": 20, "max": 40 },
+    "light": "Volle Sonne bis helles indirektes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 21 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "adiantum_raddianum",
+    "common_name": "Frauenhaarfarn",
+    "scientific_name": "Adiantum raddianum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Adiantum_raddianum_01.jpg/220px-Adiantum_raddianum_01.jpg",
+    "temperature": { "min": 16, "max": 25 },
+    "soil_moisture": { "min": 55, "max": 75 },
+    "light": "Halbschatten. Keine direkte Sonne, hohe Luftfeuchtigkeit.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 1 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "croton_codiaeum",
+    "common_name": "Kroton",
+    "scientific_name": "Codiaeum variegatum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Codiaeum_variegatum_2.jpg/220px-Codiaeum_variegatum_2.jpg",
+    "temperature": { "min": 18, "max": 28 },
+    "soil_moisture": { "min": 45, "max": 65 },
+    "light": "Helles, indirektes bis direktes Licht für beste Farben.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "kalanchoe_blossfeldiana",
+    "common_name": "Flammendes Käthchen",
+    "scientific_name": "Kalanchoe blossfeldiana",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Kalanchoe_blossfeldiana02.jpg/220px-Kalanchoe_blossfeldiana02.jpg",
+    "temperature": { "min": 14, "max": 28 },
+    "soil_moisture": { "min": 20, "max": 40 },
+    "light": "Helles Licht bis direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "asparagus_setaceus",
+    "common_name": "Zierspargel",
+    "scientific_name": "Asparagus setaceus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Asparagus_setaceus_nanus.jpg/220px-Asparagus_setaceus_nanus.jpg",
+    "temperature": { "min": 14, "max": 26 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Keine Mittagssonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 }
+    ]
+  },
+  {
+    "id": "senecio_rowleyanus",
+    "common_name": "Erbsenpflanze",
+    "scientific_name": "Senecio rowleyanus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Senecio_rowleyanus_HasVeenstra.jpg/220px-Senecio_rowleyanus_HabitusVeenstra.jpg",
+    "temperature": { "min": 12, "max": 28 },
+    "soil_moisture": { "min": 15, "max": 35 },
+    "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "pachira_aquatica",
+    "common_name": "Glückskastanie",
+    "scientific_name": "Pachira aquatica",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pachira_aquatica_%28Malabar_chestnut%29.jpg/220px-Pachira_aquatica_%28Malabar_chestnut%29.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht. Keine direkte Sonne.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "strelitzia_reginae",
+    "common_name": "Paradiesvogelblume",
+    "scientific_name": "Strelitzia reginae",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bird_of_Paradise_flower.jpg/220px-Bird_of_Paradise_flower.jpg",
+    "temperature": { "min": 14, "max": 30 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Volle Sonne bis helles indirektes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 14 }
+    ]
+  },
+  {
+    "id": "philodendron_birkin",
+    "common_name": "Philodendron Birkin",
+    "scientific_name": "Philodendron 'Birkin'",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Philodendron_Birkin_Plant.jpg/220px-Philodendron_Birkin_Plant.jpg",
+    "temperature": { "min": 16, "max": 28 },
+    "soil_moisture": { "min": 40, "max": 60 },
+    "light": "Helles, indirektes Licht für beste Blattzeichnung.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 5 },
+      { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
+      { "id": "rotate", "name": "Drehen", "icon": "mdi:rotate-3d-variant", "interval_days": 7 }
+    ]
+  },
+  {
+    "id": "petroselinum_crispum",
+    "common_name": "Petersilie",
+    "scientific_name": "Petroselinum crispum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Petroselinum_crispum_-_Perejil_1.jpg/220px-Petroselinum_crispum_-_Perejil_1.jpg",
+    "temperature": { "min": 10, "max": 25 },
+    "soil_moisture": { "min": 45, "max": 65 },
+    "light": "Helles Licht bis Halbschatten.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 7 }
+    ]
+  },
+  {
+    "id": "sedum_morganianum",
+    "common_name": "Affenschwanz",
+    "scientific_name": "Sedum morganianum",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sedum_morganianum_%28Tail_Donkey%29_-_2.jpg/220px-Sedum_morganianum_%28Tail_Donkey%29_-_2.jpg",
+    "temperature": { "min": 10, "max": 30 },
+    "soil_moisture": { "min": 10, "max": 25 },
+    "light": "Volle Sonne bis helles indirektes Licht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "euphorbia_tirucalli",
+    "common_name": "Bleistiftkaktus",
+    "scientific_name": "Euphorbia tirucalli",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Euphorbia_tirucalli_1.jpg/220px-Euphorbia_tirucalli_1.jpg",
+    "temperature": { "min": 12, "max": 32 },
+    "soil_moisture": { "min": 10, "max": 25 },
+    "light": "Volle Sonne. Liebt direkte Sonneneinstrahlung.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "thymus_vulgaris",
+    "common_name": "Thymian",
+    "scientific_name": "Thymus vulgaris",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Thymus_vulgaris0.jpg/220px-Thymus_vulgaris0.jpg",
+    "temperature": { "min": 8, "max": 28 },
+    "soil_moisture": { "min": 20, "max": 40 },
+    "light": "Volle Sonne. Trocken und warm.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 60 }
+    ]
+  },
+  {
+    "id": "tillandsia_ionantha",
+    "common_name": "Luftpflanze",
+    "scientific_name": "Tillandsia ionantha",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Tillandsia_ionantha_2.jpg/220px-Tillandsia_ionantha_2.jpg",
+    "temperature": { "min": 14, "max": 30 },
+    "soil_moisture": { "min": 0, "max": 10 },
+    "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
+    "care_tasks": [
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "water", "name": "Tauchen", "icon": "mdi:watering-can", "interval_days": 7 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  },
+  {
+    "id": "ctenanthe_burle_marxii",
+    "common_name": "Kammmarante",
+    "scientific_name": "Ctenanthe burle-marxii",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ctenanthe_burle-marxii_kz01.jpg/220px-Ctenanthe_burle-marxii_kz01.jpg",
+    "temperature": { "min": 18, "max": 27 },
+    "soil_moisture": { "min": 50, "max": 70 },
+    "light": "Halbschatten. Kein direktes Sonnenlicht.",
+    "care_tasks": [
+      { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
+      { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
+      { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 }
+    ]
+  }
+]

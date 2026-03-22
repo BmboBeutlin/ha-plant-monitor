@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select Plant Species",
+        "description": "Choose a plant from the library to monitor.",
+        "data": {
+          "plant_species": "Plant Species"
+        }
+      },
+      "details": {
+        "title": "Plant Details",
+        "description": "Give your plant a name and location.",
+        "data": {
+          "plant_name": "Plant Name",
+          "location": "Location / Room"
+        }
+      },
+      "entities": {
+        "title": "Link Sensors",
+        "description": "Link your existing Zigbee2MQTT sensor entities to this plant.",
+        "data": {
+          "temperature": "Temperature Sensor",
+          "soil_moisture": "Soil Moisture Sensor",
+          "battery": "Battery Sensor"
+        }
+      },
+      "care": {
+        "title": "Care Tasks",
+        "description": "Configure care tasks and their intervals. Uncheck tasks you don't need."
+      }
+    }
+  }
+}
