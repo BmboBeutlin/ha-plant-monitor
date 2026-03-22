@@ -16,6 +16,10 @@
           "location": "Location / Room"
         }
       },
+      "placement": {
+        "title": "Placement Recommendation for {plant_name}",
+        "description": "☀️ **Light:** {light}\n\n📏 **Window distance:** {window_distance}\n\n🧭 **Window direction:** {window_direction}\n\n⚠️ **Avoid:** {avoid}\n\n💡 **Tip:** {tip}"
+      },
       "entities": {
         "title": "Link Sensors",
         "description": "Link your existing Zigbee2MQTT sensor entities to this plant.",

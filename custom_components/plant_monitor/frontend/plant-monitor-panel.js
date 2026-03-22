@@ -570,8 +570,36 @@ class PlantMonitorPanel extends HTMLElement {
           ${careHtml}
         ` : ''}
 
-        ${info.light ? `
-          <div class="popup-section-title">Pflege-Guide</div>
+        ${info.placement || info.light ? `
+          <div class="popup-section-title">Standort</div>
+        ` : ''}
+
+        ${info.placement ? `
+          <div class="guide-item">
+            <span class="guide-icon">☀️</span>
+            <span>${info.placement.light_label || info.light || ''}</span>
+          </div>
+          <div class="guide-item">
+            <span class="guide-icon">📏</span>
+            <span>${info.placement.window_distance || ''}</span>
+          </div>
+          <div class="guide-item">
+            <span class="guide-icon">🧭</span>
+            <span>${info.placement.window_direction || ''}</span>
+          </div>
+          ${info.placement.avoid && info.placement.avoid.length > 0 ? `
+            <div class="guide-item">
+              <span class="guide-icon">⚠️</span>
+              <span>Vermeiden: ${info.placement.avoid.join(', ')}</span>
+            </div>
+          ` : ''}
+          ${info.placement.tips ? `
+            <div class="guide-item">
+              <span class="guide-icon">💡</span>
+              <span>${info.placement.tips}</span>
+            </div>
+          ` : ''}
+        ` : info.light ? `
           <div class="guide-item">
             <span class="guide-icon">☀️</span>
             <span>${info.light}</span>
@@ -579,6 +607,7 @@ class PlantMonitorPanel extends HTMLElement {
         ` : ''}
 
         ${info.care_tips ? `
+          <div class="popup-section-title">Pflege-Tipps</div>
           <div class="guide-item">
             <span class="guide-icon">📝</span>
             <span>${Array.isArray(info.care_tips) ? info.care_tips.join('. ') : info.care_tips}</span>

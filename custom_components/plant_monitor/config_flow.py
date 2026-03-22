@@ -111,7 +111,7 @@ class PlantMonitorConfigFlow(ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             self._data[CONF_PLANT_NAME] = user_input[CONF_PLANT_NAME]
             self._data[CONF_LOCATION] = user_input[CONF_LOCATION]
-            return await self.async_step_entities()
+            return await self.async_step_placement()
 
         # Suggest name from library
         library = self._get_library()
@@ -126,6 +126,40 @@ class PlantMonitorConfigFlow(ConfigFlow, domain=DOMAIN):
                 ): TextSelector(),
                 vol.Required(CONF_LOCATION): TextSelector(),
             }),
+        )
+
+    async def async_step_placement(
+        self, user_input: dict[str, Any] | None = None
+    ) -> dict:
+        """Step 2b: Show placement recommendation (info only)."""
+        if user_input is not None:
+            return await self.async_step_entities()
+
+        library = self._get_library()
+        species = library.get(self._data[CONF_PLANT_SPECIES], {})
+        placement = species.get("placement", {})
+        common_name = species.get("common_name", "Pflanze")
+
+        # Build placement info text
+        light_label = placement.get("light_label", "Keine Angabe")
+        window_dist = placement.get("window_distance", "")
+        window_dir = placement.get("window_direction", "")
+        avoid_list = placement.get("avoid", [])
+        tip = placement.get("tips", "")
+
+        avoid_text = ", ".join(avoid_list) if avoid_list else "—"
+
+        return self.async_show_form(
+            step_id="placement",
+            data_schema=vol.Schema({}),
+            description_placeholders={
+                "plant_name": common_name,
+                "light": light_label,
+                "window_distance": window_dist,
+                "window_direction": window_dir,
+                "avoid": avoid_text,
+                "tip": tip,
+            },
         )
 
     async def async_step_entities(

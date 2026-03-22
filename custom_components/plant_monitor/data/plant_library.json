@@ -8,6 +8,14 @@
     "soil_moisture": { "min": 40, "max": 70 },
     "light": "Helles, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Luftwurzeln nicht abschneiden — sie helfen der Pflanze beim Klettern. Gelbe Blätter deuten auf Überwässerung hin.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Heizungsluft", "Zugluft"],
+      "tips": "Nicht direkt neben die Heizung stellen — trockene Luft schadet den grossen Blattern."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -25,6 +33,14 @@
     "soil_moisture": { "min": 40, "max": 65 },
     "light": "Halbschattig bis hell, keine direkte Sonne.",
     "care_tips": "Extrem vermehrungsfreudig — abgeschnittene Triebe wurzeln einfach im Wasserglas. Braune Blattspitzen bedeuten zu trockene Luft.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig, kein direktes Sonnenlicht",
+      "window_distance": "1-3m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal, Nordfenster geht auch",
+      "avoid": ["Direkte Mittagssonne", "Heizungsluft"],
+      "tips": "Sehr flexibel beim Standort — auch in dunkleren Ecken machbar, aber die Blattzeichnung verblasst dann."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 4 },
@@ -41,6 +57,14 @@
     "soil_moisture": { "min": 10, "max": 30 },
     "light": "Schattig bis sonnig. Sehr anpassungsfähig.",
     "care_tips": "Eine der anspruchslosesten Pflanzen. Verträgt Vernachlässigung besser als zu viel Pflege. Staunässe ist der häufigste Killergrund.",
+    "placement": {
+      "light_level": "low_light",
+      "light_label": "Überall einsetzbar — von schattig bis sonnig",
+      "window_distance": "0-5m vom Fenster",
+      "window_direction": "Jede Fensterrichtung, auch fensterlose Flure mit etwas Licht",
+      "avoid": ["Staunässe"],
+      "tips": "Kann praktisch überall stehen — auch im Flur oder Badezimmer ohne direktes Fenster."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 18 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -56,6 +80,14 @@
     "soil_moisture": { "min": 40, "max": 65 },
     "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
     "care_tips": "Kindel an langen Trieben einfach abtrennen und einpflanzen. Braune Blattspitzen kommen oft von Fluorid im Leitungswasser.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Dunkle Ecken"],
+      "tips": "Als Hängepflanze perfekt in der Nähe eines Fensters — die Kindel hängen dekorativ herunter."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
@@ -71,6 +103,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Halbschatten bis Schatten. Kein direktes Sonnenlicht.",
     "care_tips": "Zeigt Wassermangel durch hängende Blätter an — erholt sich nach dem Gießen schnell. Hervorragender Luftreiniger.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten bis schattig, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster ideal, Ost/West mit Abstand",
+      "avoid": ["Direkte Sonne", "Zugluft", "Heizungsluft"],
+      "tips": "Ideal für Nordfenster oder Büros — eine der wenigen Pflanzen, die im Schatten blühen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -87,6 +127,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Keine Mittagssonne.",
     "care_tips": "Standortwechsel vermeiden — reagiert empfindlich mit Blattverlust. Große Blätter regelmäßig von Staub befreien für optimale Photosynthese.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Großes Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Standortwechsel", "Heizungsluft"],
+      "tips": "Einmal den perfekten Platz finden und nie wieder umstellen — jeder Standortwechsel kann Blattverlust ausloesen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 10 },
@@ -103,6 +151,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht bis Halbschatten.",
     "care_tips": "Glänzende Blätter mit feuchtem Tuch abwischen — kein Blattglanzspray verwenden. Weißer Milchsaft beim Schneiden ist normal, kann aber Haut reizen.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft"],
+      "tips": "Dunkellaubige Sorten vertragen mehr Schatten, buntlaubige brauchen deutlich mehr Licht."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 7 },
@@ -119,6 +175,14 @@
     "soil_moisture": { "min": 10, "max": 30 },
     "light": "Volle Sonne bis heller Standort.",
     "care_tips": "Gel aus den Blättern hilft bei leichten Verbrennungen. Erde zwischen dem Gießen komplett austrocknen lassen.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, direkte Sonneneinstrahlung ideal",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal, Westfenster geht auch",
+      "avoid": ["Dunkle Ecken", "Kalte Fensterbänke im Winter"],
+      "tips": "Direkt auf die Südfensterbank stellen — Aloe liebt maximale Sonne und verträgt auch Heizungsnähe."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 },
@@ -134,6 +198,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Volle Sonne, mindestens 6 Stunden täglich.",
     "care_tips": "Blütenstände sofort entfernen, damit die Pflanze buschig bleibt. Immer von oben ernten, nie einzelne Blätter am Stiel abreißen.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, mindestens 6 Stunden direkt",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster, kein Kompromiss",
+      "avoid": ["Zugluft", "Kalte Fensterbänke im Winter", "Schattige Plätze"],
+      "tips": "Braucht den hellsten Platz in der Wohnung — auf der Südfensterbank in der Küche ist er am besten aufgehoben."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 2 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 14 },
@@ -149,6 +221,14 @@
     "soil_moisture": { "min": 20, "max": 40 },
     "light": "Volle Sonne. Sehr lichthungrig.",
     "care_tips": "Verträgt Kälte bis fast 0°C. Zu viel Wasser ist schlimmer als zu wenig — mediterrane Pflanze, die Trockenheit gewohnt ist.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, maximal viel Licht",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Schattige Plätze", "Staunässe"],
+      "tips": "Auf der Südfensterbank am glücklichsten — verträgt im Gegensatz zu den meisten Kräutern auch trockene Heizungsluft."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 30 },
@@ -164,6 +244,14 @@
     "soil_moisture": { "min": 30, "max": 50 },
     "light": "Helles, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Nur mit Regenwasser oder abgestandenem Wasser gießen. Wurzeln sollten nach dem Gießen silbrig-grün werden — grüne Wurzeln heißen: noch nicht gießen.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "0.5-1m vom Fenster",
+      "window_direction": "Ostfenster ideal — sanftes Morgenlicht",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Kalte Fensterbänke im Winter"],
+      "tips": "Am Ostfenster mit Morgensonne fühlt sich die Orchidee am wohlsten — Mittagssonne verbrennt die Blätter."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen (Tauchen)", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -179,6 +267,14 @@
     "soil_moisture": { "min": 10, "max": 25 },
     "light": "Volle Sonne. Möglichst viel direktes Licht.",
     "care_tips": "Niemals Wasser auf die Rosette gießen — Fäulnisgefahr. Abgefallene Blätter können auf feuchter Erde neue Pflanzen bilden.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, möglichst viel direkt",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Direkt auf die sonnigste Fensterbank — bei zu wenig Licht vergeilt die Rosette und verliert ihre kompakte Form."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 },
@@ -194,6 +290,14 @@
     "soil_moisture": { "min": 50, "max": 80 },
     "light": "Halbschatten, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Ideal fürs Badezimmer — liebt hohe Luftfeuchtigkeit. Braune Wedel an der Basis sind normal und können entfernt werden.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster ideal, Ost mit Abstand",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Trockene Räume"],
+      "tips": "Im Badezimmer mit Tageslicht ist der perfekte Standort — die hohe Luftfeuchtigkeit dankt der Farn mit üppigem Wuchs."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 1 },
@@ -209,6 +313,14 @@
     "soil_moisture": { "min": 40, "max": 65 },
     "light": "Helles bis mittleres indirektes Licht.",
     "care_tips": "Wächst kletternd oder hängend — eine Rankhilfe fördert größere Blätter. Sehr gut für Anfänger geeignet.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Heizungsluft"],
+      "tips": "Als Hängepflanze neben einem Ost- oder Westfenster besonders dekorativ — die Ranken wachsen zum Licht."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -225,6 +337,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Halbschatten, kein direktes Sonnenlicht.",
     "care_tips": "Nur mit kalkarmem Wasser gießen (Regenwasser ideal). Eingerollte Blätter zeigen Wassermangel oder zu trockene Luft an.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster oder Ostfenster mit Abstand",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Zugluft", "Trockene Räume"],
+      "tips": "Braucht gleichmässige Bedingungen ohne Temperaturschwankungen — nicht neben Türen oder Heizkörper stellen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
@@ -241,6 +361,14 @@
     "soil_moisture": { "min": 30, "max": 50 },
     "light": "Helles, indirektes Licht. Verträgt auch Halbschatten.",
     "care_tips": "Empfindlich gegenüber Fluorid im Leitungswasser — abgestandenes Wasser nutzen. Untere Blätter fallen natürlich ab, das ist normal.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft"],
+      "tips": "Tolerant und pflegeleicht — ideal als Raumteiler oder Ecken-Pflanze mit indirektem Licht."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 4 },
@@ -256,6 +384,14 @@
     "soil_moisture": { "min": 10, "max": 30 },
     "light": "Schattig bis hell. Sehr tolerant gegenüber wenig Licht.",
     "care_tips": "Speichert Wasser in den dicken Stielen — lieber zu wenig als zu viel gießen. Wächst langsam, aber praktisch unzerstörbar.",
+    "placement": {
+      "light_level": "low_light",
+      "light_label": "Überall einsetzbar — von schattig bis hell",
+      "window_distance": "0-5m vom Fenster",
+      "window_direction": "Jede Fensterrichtung, selbst dunkle Ecken",
+      "avoid": ["Staunässe", "Direkte pralle Sonne"],
+      "tips": "Die ultimative Büro-Pflanze — gedeiht auch an Standorten, wo kaum eine andere Pflanze überlebt."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 18 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -271,6 +407,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Helles, indirektes Licht. Keine Mittagssonne.",
     "care_tips": "Wasser nie direkt auf die Blätter — Blattflecken sind die Folge. Liebt hohe Luftfeuchtigkeit, aber keine nassen Blätter.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Heizungsluft"],
+      "tips": "Neben einem Ostfenster aufstellen — die bunten Blattmuster kommen bei hellem, indirektem Licht am besten zur Geltung."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
@@ -286,6 +430,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Standortwechsel vermeiden.",
     "care_tips": "Reagiert auf jeden Standortwechsel mit Blattabwurf — möglichst am selben Platz lassen. Zugluft unbedingt vermeiden.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Zugluft", "Standortwechsel", "Direkte Mittagssonne", "Heizungsluft"],
+      "tips": "Einen festen Platz mit stabilem Licht wählen und nie mehr umstellen — die Birkenfeige quittiert jeden Wechsel mit Blattabwurf."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 4 },
@@ -303,6 +455,14 @@
     "soil_moisture": { "min": 5, "max": 20 },
     "light": "Volle Sonne. So viel Licht wie möglich.",
     "care_tips": "Im Winter (November–Februar) komplett trocken halten und kühl stellen — das fördert die Blütenbildung im Frühling.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, maximale direkte Sonneneinstrahlung",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster, je mehr Sonne desto besser",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Auf die sonnigste Südfensterbank stellen — im Winter gerne kühl bei 5-10 Grad, das fördert die Blüte."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 21 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -317,6 +477,14 @@
     "soil_moisture": { "min": 20, "max": 40 },
     "light": "Volle Sonne. Mindestens 6 Stunden direkt.",
     "care_tips": "Nach der Blüte um ein Drittel zurückschneiden, nie ins alte Holz. Kalkhaltige Erde bevorzugt.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, mindestens 6 Stunden direkt",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Schattige Plätze", "Staunässe", "Hohe Luftfeuchtigkeit"],
+      "tips": "Auf der Südfensterbank oder im Sommer auf dem Balkon — Lavendel braucht so viel Sonne wie möglich."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 90 },
@@ -332,6 +500,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Helles Licht bis Halbschatten.",
     "care_tips": "Extrem wuchsfreudig — immer in eigenem Topf halten, nie zusammen mit anderen Kräutern. Regelmäßig ernten fördert buschiges Wachstum.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "Direkt auf der Fensterbank oder bis 1m Abstand",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "In der Küche auf der Fensterbank aufstellen — Minze verträgt mehr Schatten als andere Kräuter, braucht aber regelmässig Licht."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
@@ -347,6 +523,14 @@
     "soil_moisture": { "min": 35, "max": 55 },
     "light": "Helles, indirektes Licht. Keine pralle Sonne.",
     "care_tips": "Bildet viele Ableger an der Basis — diese abstechen und weiterverschenken. Wöchentlich drehen, sonst wächst sie schief zum Licht.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft"],
+      "tips": "Wöchentlich drehen, damit sie gleichmässig wächst — die runden Blätter richten sich stark nach dem Licht aus."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
@@ -362,6 +546,14 @@
     "soil_moisture": { "min": 10, "max": 30 },
     "light": "Volle Sonne bis helles indirektes Licht.",
     "care_tips": "Kann jahrzehntealt werden. Erde komplett austrocknen lassen zwischen dem Gießen. Schrumpelige Blätter = zu wenig Wasser.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne bis hell",
+      "window_distance": "Direkt auf der Fensterbank oder bis 1m",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Am Südfenster wird der Geldbaum über die Jahre zu einem stattlichen Bäumchen — verträgt auch Heizungsnähe."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -376,6 +568,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Halbschattig. Verträgt auch Schatten.",
     "care_tips": "Bevorzugt kühle Standorte — Heizungsluft fördert Spinnmilben. Regelmäßig auf Schädlinge kontrollieren.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschattig bis schattig",
+      "window_distance": "1-3m vom Fenster",
+      "window_direction": "Nordfenster ideal, auch Ost/West mit Abstand",
+      "avoid": ["Heizungsluft", "Warme Räume über 22°C", "Direkte Sonne"],
+      "tips": "Bevorzugt kühle Räume wie Schlafzimmer oder Treppenhaus — warme Heizungsluft fördert Spinnmilbenbefall."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -392,6 +592,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Helles, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Geht im Winter oft in Ruhephase und verliert Blätter — Knolle nicht wegwerfen, treibt im Frühling neu aus. Braucht hohe Luftfeuchtigkeit.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Sonne", "Zugluft", "Heizungsluft", "Kalte Fensterbänke im Winter"],
+      "tips": "Braucht konstant warme Temperaturen und hohe Luftfeuchtigkeit — ideal neben anderen Tropenpflanzen gruppiert."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
@@ -408,6 +616,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Halbschatten. Kein direktes Sonnenlicht.",
     "care_tips": "Faltet abends die Blätter zusammen (Gebetspflanze). Nur mit kalkarmem Wasser gießen, sonst bekommt sie braune Blattränder.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster oder Ostfenster mit Abstand",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Zugluft", "Trockene Räume"],
+      "tips": "Wie die Calathea empfindlich — am besten in einer Gruppe mit anderen Tropenpflanzen, um die Luftfeuchtigkeit zu erhöhen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
@@ -423,6 +639,14 @@
     "soil_moisture": { "min": 55, "max": 80 },
     "light": "Halbschatten, indirektes Licht. Keine Sonne.",
     "care_tips": "Wasser nie ins Herz der Rosette gießen, sondern seitlich in die Erde. Blätter nicht anfassen — die zarten Wedel brechen leicht.",
+    "placement": {
+      "light_level": "shade",
+      "light_label": "Schattig bis halbschattig, keine direkte Sonne",
+      "window_distance": "2-4m vom Fenster",
+      "window_direction": "Nordfenster ideal",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Trockene Räume", "Zugluft"],
+      "tips": "Perfekt fürs Badezimmer mit Nordfenster — die konstante Feuchtigkeit und das gedämpfte Licht sind ideal."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 4 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 1 },
@@ -438,6 +662,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
     "care_tips": "Pflanzensaft ist giftig und reizt Haut und Schleimhäute — Handschuhe beim Schneiden tragen. Nicht für Haushalte mit kleinen Kindern oder Haustieren.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Heizungsluft"],
+      "tips": "Wegen der Giftigkeit ausser Reichweite von Kindern und Haustieren aufstellen — am besten auf einem erhöhten Regal."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 6 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 4 },
@@ -454,6 +686,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Helles, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Rote oder pinke Hochblätter sind keine echten Blütenblätter. Braucht hohe Luftfeuchtigkeit für regelmäßige Blütenbildung.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Heizungsluft"],
+      "tips": "Neben einem hellen Fenster ohne direkte Sonne aufstellen — regelmässiges Besprühen fördert die Blütenbildung."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 6 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -470,6 +710,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht für lebhafte Farben.",
     "care_tips": "Wird unten oft kahl — regelmäßig Triebspitzen abschneiden und als Stecklinge neu einpflanzen. Sehr schnellwüchsig.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell für intensive Blattfärbung",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Direkte Mittagssonne"],
+      "tips": "Als Hängepflanze nahe einem hellen Fenster — bei zu wenig Licht verblassen die silbrig-violetten Streifen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 21 },
@@ -485,6 +733,14 @@
     "soil_moisture": { "min": 30, "max": 50 },
     "light": "Helles, indirektes Licht bis Halbschatten.",
     "care_tips": "Speichert Wasser in den fleischigen Blättern — eher zu wenig als zu viel gießen. Kompakte Pflanze, die wenig Platz braucht.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal, Nordfenster geht auch",
+      "avoid": ["Direkte Mittagssonne", "Staunässe"],
+      "tips": "Perfekte Schreibtischpflanze — kompakt, anspruchslos und kommt auch mit weniger Licht zurecht."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 28 }
@@ -499,6 +755,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Verträgt auch Halbschatten.",
     "care_tips": "Verliert Blätter bei Zugluft oder plötzlichem Standortwechsel. Kann durch Rückschnitt kompakt gehalten werden.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Zugluft", "Standortwechsel", "Direkte Mittagssonne"],
+      "tips": "Einen festen Platz mit gleichmässigem Licht wählen — reagiert empfindlich auf Standortwechsel und Zugluft."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -515,6 +779,14 @@
     "soil_moisture": { "min": 10, "max": 25 },
     "light": "Helles Licht, etwas direkte Sonne möglich.",
     "care_tips": "Perfekte Schreibtischpflanze — klein, kompakt und pflegeleicht. Verträgt mehr Schatten als die meisten Sukkulenten.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, etwas direkte Sonne möglich",
+      "window_distance": "Direkt auf der Fensterbank oder bis 1m",
+      "window_direction": "Süd-, Ost- oder Westfenster",
+      "avoid": ["Pralle Mittagssonne über Stunden", "Staunässe"],
+      "tips": "Verträgt mehr Schatten als andere Sukkulenten — auch auf dem Schreibtisch mit etwas Abstand zum Fenster machbar."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -529,6 +801,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Halbschatten. Kein direktes Sonnenlicht.",
     "care_tips": "Die Blattunterseite zeigt ein violettes Muster — ein Zeichen für gute Pflanzengesundheit. Nur mit zimmerwarmem, weichem Wasser gießen.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster oder Ostfenster mit Abstand",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Zugluft", "Trockene Räume"],
+      "tips": "Wie alle Calatheas empfindlich — am besten in einem Raum mit gleichmässiger Temperatur und Luftfeuchtigkeit."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
@@ -545,6 +825,14 @@
     "soil_moisture": { "min": 30, "max": 50 },
     "light": "Helles, indirektes Licht. Verträgt Halbschatten.",
     "care_tips": "Guter Luftreiniger laut NASA-Studie. Braune Blattspitzen entstehen durch zu trockene Luft oder Fluorid im Wasser.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "1-3m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft"],
+      "tips": "Als grosse Bodenpflanze ideal in Wohnzimmerecken mit indirektem Licht — guter natürlicher Luftreiniger."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -560,6 +848,14 @@
     "soil_moisture": { "min": 5, "max": 20 },
     "light": "Volle Sonne. Liebt direkte Sonneneinstrahlung.",
     "care_tips": "Vorsicht vor den feinen Glochiden (Stachelbüschel) — sind schwer zu entfernen. Im Winter kühl und trocken halten für Blütenansatz.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, direkte Sonneneinstrahlung",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Auf der Südfensterbank an einem Platz, wo niemand aus Versehen die Glochiden berührt — die feinen Stacheln sind schwer zu entfernen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 21 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 },
@@ -575,6 +871,14 @@
     "soil_moisture": { "min": 40, "max": 65 },
     "light": "Helles, indirektes Licht. Keine pralle Sonne.",
     "care_tips": "Blattform ändert sich mit dem Alter — junge Blätter sind pfeilförmig, ältere werden gelappt. Rankhilfe fördert größere Blätter.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Heizungsluft", "Zugluft"],
+      "tips": "Mit einer Rankhilfe neben einem hellen Fenster aufstellen — kletternd entwickelt sie die grössten und schönsten Blätter."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 6 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -591,6 +895,14 @@
     "soil_moisture": { "min": 25, "max": 45 },
     "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
     "care_tips": "Verblühte Blütenstiele nicht abschneiden — dort blüht sie erneut. Blüht erst an älteren Trieben, Geduld ist nötig.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, etwas Morgensonne förderlich",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Ostfenster ideal für Morgensonne",
+      "avoid": ["Direkte Mittagssonne", "Standortwechsel während der Blüte"],
+      "tips": "Am Ostfenster mit Morgensonne und als Hängepflanze aufstellen — während der Blüte nicht umstellen, sonst fallen die Knospen ab."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -606,6 +918,14 @@
     "soil_moisture": { "min": 20, "max": 40 },
     "light": "Volle Sonne bis helles indirektes Licht.",
     "care_tips": "Robust und pflegeleicht — ideale Büropflanze. Verträgt trockene Heizungsluft besser als die meisten Tropenpflanzen.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne bis hell",
+      "window_distance": "Direkt am Fenster oder bis 1.5m",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Eine der robustesten Zimmerpflanzen — verträgt direkte Sonne, trockene Heizungsluft und gelegentliches Vergessen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 28 }
@@ -620,6 +940,14 @@
     "soil_moisture": { "min": 60, "max": 80 },
     "light": "Halbschatten. Keine direkte Sonne, hohe Luftfeuchtigkeit.",
     "care_tips": "Der anspruchsvollste Zimmerfarn. Nie austrocknen lassen und nie direkte Sonne. Ideal im Badezimmer mit Tageslicht.",
+    "placement": {
+      "light_level": "shade",
+      "light_label": "Schattig, keine direkte Sonne",
+      "window_distance": "2-4m vom Fenster",
+      "window_direction": "Nordfenster ideal",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Trockene Räume", "Zugluft"],
+      "tips": "Nur im Badezimmer mit Tageslicht wirklich gut haltbar — die konstant hohe Luftfeuchtigkeit ist überlebenswichtig."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 1 },
@@ -635,6 +963,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Helles, indirektes bis direktes Licht für beste Farben.",
     "care_tips": "Verliert bei Standortwechsel oder Zugluft sofort Blätter. Je mehr Licht, desto intensiver die Blattfärbung.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis etwas direkte Sonne für intensive Farben",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal, Südfenster mit leichter Beschattung",
+      "avoid": ["Zugluft", "Standortwechsel", "Heizungsluft", "Dunkle Ecken"],
+      "tips": "Je heller der Standort, desto bunter die Blätter — aber nie umstellen, denn jeder Wechsel kostet Blätter."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -651,6 +987,14 @@
     "soil_moisture": { "min": 15, "max": 35 },
     "light": "Helles Licht bis direkte Sonne.",
     "care_tips": "Kurztagpflanze — 6 Wochen lang 14 Stunden Dunkelheit pro Tag erzwingen löst neue Blütenbildung aus. Verblühtes entfernen.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Hell bis volle Sonne",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe"],
+      "tips": "Auf der Fensterbank mit viel Licht aufstellen — für erneute Blüte braucht sie 6 Wochen lang abends eine Abdeckung."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 10 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 35 }
@@ -665,6 +1009,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Keine Mittagssonne.",
     "care_tips": "Kein echter Farn, sondern ein Spargelgewächs. Nadelt bei zu trockener Luft oder Wassermangel — dann besprühen.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Heizungsluft", "Trockene Räume"],
+      "tips": "Als filigrane Hängepflanze neben einem hellen Fenster besonders dekorativ — bei trockener Luft häufig besprühen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -680,6 +1032,14 @@
     "soil_moisture": { "min": 10, "max": 30 },
     "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
     "care_tips": "Die kugelrunden Blätter speichern Wasser — Überwässerung führt zum Platzen und Faulen. Hängend in Ampeln am schönsten.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, etwas Morgensonne möglich",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Staunässe", "Dunkle Ecken"],
+      "tips": "Als Hängeampel nahe einem Ostfenster aufhängen — die Erbsenketten sehen herunterhängend am besten aus."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -694,6 +1054,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Helles, indirektes Licht. Keine direkte Sonne.",
     "care_tips": "Der geflochtene Stamm ist rein dekorativ. Staunässe unbedingt vermeiden — der dicke Stamm speichert bereits Wasser.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Zugluft", "Staunässe"],
+      "tips": "Als dekorative Bodenpflanze neben einem grossen Fenster mit indirektem Licht aufstellen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 8 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -710,6 +1078,14 @@
     "soil_moisture": { "min": 40, "max": 60 },
     "light": "Volle Sonne bis helles indirektes Licht.",
     "care_tips": "Blüht erst ab einem Alter von 4-6 Jahren. Braucht viel Platz und einen großen Topf für die kräftigen Wurzeln.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne bis hell",
+      "window_distance": "Direkt am Fenster oder bis 1m",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Beengte Standorte"],
+      "tips": "Direkt an ein grosses Süd- oder Westfenster stellen — braucht viel Platz und maximales Licht für die Blütenbildung."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "wipe", "name": "Blätter wischen", "icon": "mdi:hand-wash", "interval_days": 14 },
@@ -726,6 +1102,14 @@
     "soil_moisture": { "min": 40, "max": 65 },
     "light": "Helles, indirektes Licht für beste Blattzeichnung.",
     "care_tips": "Weiße Streifen verblassen bei zu wenig Licht. Gelegentlich erscheinen rein grüne Blätter — das ist eine natürliche Rückmutation.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell für intensive Blattzeichnung, kein direktes Sonnenlicht",
+      "window_distance": "1-2m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Direkte Mittagssonne", "Dunkle Ecken", "Heizungsluft"],
+      "tips": "Braucht mehr Licht als die meisten Philodendren — bei zu wenig Licht verlieren die Blätter ihre weissen Streifen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 3 },
@@ -743,6 +1127,14 @@
     "soil_moisture": { "min": 45, "max": 65 },
     "light": "Helles Licht bis Halbschatten.",
     "care_tips": "Zweijährig — im zweiten Jahr blüht sie und stirbt ab. Vergilbende Blätter am besten komplett abschneiden.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell bis halbschattig",
+      "window_distance": "Direkt auf der Fensterbank oder bis 1m",
+      "window_direction": "Süd- oder Ostfenster ideal",
+      "avoid": ["Dunkle Ecken", "Extreme Hitze"],
+      "tips": "In der Küche auf der Fensterbank aufstellen — kommt auch mit etwas weniger Licht aus als Basilikum."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 3 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 21 },
@@ -758,6 +1150,14 @@
     "soil_moisture": { "min": 10, "max": 25 },
     "light": "Volle Sonne bis helles indirektes Licht.",
     "care_tips": "Blätter fallen bei der kleinsten Berührung ab — so wenig wie möglich umstellen. Abgefallene Blätter wurzeln leicht auf Erde.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne bis hell",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Süd- oder Westfenster ideal",
+      "avoid": ["Berührung und Umstellen", "Dunkle Ecken", "Staunässe"],
+      "tips": "Als Hängeampel direkt am Südfenster aufhängen und dann nie wieder anfassen — die Blätter fallen bei der kleinsten Berührung ab."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 12 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -772,6 +1172,14 @@
     "soil_moisture": { "min": 10, "max": 25 },
     "light": "Volle Sonne. Liebt direkte Sonneneinstrahlung.",
     "care_tips": "Kein echter Kaktus, sondern eine Wolfsmilch. Der weiße Milchsaft ist giftig und hautreizend — Handschuhe tragen.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, direkte Sonneneinstrahlung",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Dunkle Ecken", "Staunässe", "Reichweite von Kindern und Haustieren"],
+      "tips": "Auf die Südfensterbank, aber ausser Reichweite von Kindern — der Milchsaft ist giftig und reizt Haut und Augen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 14 },
       { "id": "fertilize", "name": "Düngen", "icon": "mdi:flower", "interval_days": 40 }
@@ -786,6 +1194,14 @@
     "soil_moisture": { "min": 20, "max": 40 },
     "light": "Volle Sonne. Trocken und warm.",
     "care_tips": "Mediterranes Kraut — verträgt Trockenheit besser als Nässe. Nach der Blüte leicht zurückschneiden, nie ins Holz.",
+    "placement": {
+      "light_level": "full_sun",
+      "light_label": "Volle Sonne, trocken und warm",
+      "window_distance": "Direkt auf der Fensterbank",
+      "window_direction": "Südfenster ideal",
+      "avoid": ["Schattige Plätze", "Staunässe", "Hohe Luftfeuchtigkeit"],
+      "tips": "Auf der sonnigsten Fensterbank in der Küche aufstellen — mediterranes Kraut, das Hitze und Trockenheit liebt."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 7 },
       { "id": "prune", "name": "Schneiden", "icon": "mdi:content-cut", "interval_days": 30 },
@@ -801,6 +1217,14 @@
     "soil_moisture": { "min": 0, "max": 10 },
     "light": "Helles, indirektes Licht. Etwas Morgensonne möglich.",
     "care_tips": "Braucht keine Erde — nimmt Wasser und Nährstoffe über die Blätter auf. Nach dem Tauchen kopfüber trocknen lassen, damit kein Wasser im Herz stehen bleibt.",
+    "placement": {
+      "light_level": "bright_indirect",
+      "light_label": "Hell, etwas Morgensonne möglich",
+      "window_distance": "0.5-1.5m vom Fenster",
+      "window_direction": "Ost- oder Westfenster ideal",
+      "avoid": ["Dunkle Ecken", "Dauernässe"],
+      "tips": "Kann frei auf Holz, Stein oder in Glasgefässen platziert werden — braucht keine Erde, nur Licht und regelmässiges Besprühen."
+    },
     "care_tasks": [
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },
       { "id": "water", "name": "Tauchen", "icon": "mdi:watering-can", "interval_days": 7 },
@@ -816,6 +1240,14 @@
     "soil_moisture": { "min": 50, "max": 70 },
     "light": "Halbschatten. Kein direktes Sonnenlicht.",
     "care_tips": "Verwandt mit Calathea und genauso empfindlich gegenüber hartem Wasser. Faltet wie die Maranta abends die Blätter zusammen.",
+    "placement": {
+      "light_level": "partial_shade",
+      "light_label": "Halbschatten, kein direktes Sonnenlicht",
+      "window_distance": "2-3m vom Fenster",
+      "window_direction": "Nordfenster oder Ostfenster mit Abstand",
+      "avoid": ["Direkte Sonne", "Heizungsluft", "Zugluft", "Trockene Räume"],
+      "tips": "Wie Calathea und Maranta empfindlich — am besten in einem geschützten Bereich ohne Temperaturschwankungen aufstellen."
+    },
     "care_tasks": [
       { "id": "water", "name": "Gießen", "icon": "mdi:watering-can", "interval_days": 5 },
       { "id": "mist", "name": "Besprühen", "icon": "mdi:spray", "interval_days": 2 },

@@ -16,6 +16,10 @@
           "location": "Standort / Raum"
         }
       },
+      "placement": {
+        "title": "Standort-Empfehlung für {plant_name}",
+        "description": "☀️ **Licht:** {light}\n\n📏 **Fensterabstand:** {window_distance}\n\n🧭 **Fensterrichtung:** {window_direction}\n\n⚠️ **Vermeiden:** {avoid}\n\n💡 **Tipp:** {tip}"
+      },
       "entities": {
         "title": "Sensoren verknüpfen",
         "description": "Verknüpfe deine bestehenden Zigbee2MQTT-Sensoren mit dieser Pflanze.",
@@ -27,7 +31,7 @@
       },
       "care": {
         "title": "Pflegeaufgaben",
-        "description": "Wähle die Pflegeaufgaben die du tracken möchtest. Die vorgeschlagenen Aufgaben und Intervalle basieren auf den spezifischen Bedürfnissen deiner {plant_name}.",
+        "description": "✅ **Optimale Einstellungen für deine {plant_name}**\n\nDie folgenden Pflegeaufgaben und Intervalle sind auf die spezifischen Bedürfnisse dieser Pflanzenart abgestimmt. Deaktiviere Aufgaben die du nicht brauchst.",
         "data": {
           "selected_tasks": "Aktive Pflegeaufgaben"
         }
