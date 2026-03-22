@@ -158,68 +158,114 @@ class PlantMonitorConfigFlow(ConfigFlow, domain=DOMAIN):
     async def async_step_care(
         self, user_input: dict[str, Any] | None = None
     ) -> dict:
-        """Step 4: Configure care tasks and intervals."""
-        if user_input is not None:
-            # Build care tasks from user input
-            care_tasks = []
-            library = self._get_library()
-            species = library.get(self._data[CONF_PLANT_SPECIES], {})
-            default_tasks = species.get("care_tasks", [])
-
-            for task in default_tasks:
-                task_id = task["id"]
-                enabled_key = f"enable_{task_id}"
-                interval_key = f"interval_{task_id}"
-
-                if user_input.get(enabled_key, True):
-                    care_tasks.append({
-                        "id": task_id,
-                        "name": task["name"],
-                        "icon": task.get("icon", "mdi:leaf"),
-                        "interval_days": int(
-                            user_input.get(interval_key, task["interval_days"])
-                        ),
-                    })
-
-            self._data[CONF_CARE_TASKS] = care_tasks
-
-            return self.async_create_entry(
-                title=f"{self._data[CONF_LOCATION]} {self._data[CONF_PLANT_NAME]}",
-                data=self._data,
-            )
-
-        # Build form with care task toggles and intervals
+        """Step 4: Select which care tasks to enable."""
         library = self._get_library()
         species = library.get(self._data[CONF_PLANT_SPECIES], {})
         default_tasks = species.get("care_tasks", [])
 
-        schema_dict: dict = {}
-        for task in default_tasks:
-            task_id = task["id"]
-            schema_dict[vol.Optional(
-                f"enable_{task_id}", default=True
-            )] = bool
-            schema_dict[vol.Optional(
-                f"interval_{task_id}", default=task["interval_days"]
-            )] = NumberSelector(
-                NumberSelectorConfig(
-                    min=1,
-                    max=365,
-                    step=1,
-                    mode=NumberSelectorMode.BOX,
-                    unit_of_measurement="Tage",
-                )
-            )
-
-        if not schema_dict:
-            # No care tasks in library for this species
+        if not default_tasks:
             self._data[CONF_CARE_TASKS] = []
             return self.async_create_entry(
                 title=f"{self._data[CONF_LOCATION]} {self._data[CONF_PLANT_NAME]}",
                 data=self._data,
             )
 
+        if user_input is not None:
+            selected_ids = user_input.get("selected_tasks", [])
+            self._selected_tasks = [
+                t for t in default_tasks if t["id"] in selected_ids
+            ]
+            if self._selected_tasks:
+                self._care_task_index = 0
+                return await self.async_step_care_interval()
+            # No tasks selected
+            self._data[CONF_CARE_TASKS] = []
+            return self.async_create_entry(
+                title=f"{self._data[CONF_LOCATION]} {self._data[CONF_PLANT_NAME]}",
+                data=self._data,
+            )
+
+        # Build multi-select with readable labels
+        task_options = [
+            {
+                "value": task["id"],
+                "label": f"{task['name']} (alle {task['interval_days']} Tage)",
+            }
+            for task in default_tasks
+        ]
+        all_ids = [t["id"] for t in default_tasks]
+
         return self.async_show_form(
             step_id="care",
-            data_schema=vol.Schema(schema_dict),
+            data_schema=vol.Schema({
+                vol.Required(
+                    "selected_tasks", default=all_ids
+                ): SelectSelector(
+                    SelectSelectorConfig(
+                        options=task_options,
+                        mode=SelectSelectorMode.LIST,
+                        multiple=True,
+                    )
+                ),
+            }),
+            description_placeholders={
+                "plant_name": species.get("common_name", ""),
+            },
+        )
+
+    async def async_step_care_interval(
+        self, user_input: dict[str, Any] | None = None
+    ) -> dict:
+        """Step 4b: Set interval for each selected care task (one at a time)."""
+        if not hasattr(self, "_selected_tasks"):
+            return await self.async_step_care()
+
+        if user_input is not None:
+            task = self._selected_tasks[self._care_task_index]
+            if not hasattr(self, "_configured_tasks"):
+                self._configured_tasks = []
+            self._configured_tasks.append({
+                "id": task["id"],
+                "name": task["name"],
+                "icon": task.get("icon", "mdi:leaf"),
+                "interval_days": int(user_input.get("interval", task["interval_days"])),
+            })
+            self._care_task_index += 1
+
+            if self._care_task_index < len(self._selected_tasks):
+                return await self.async_step_care_interval()
+
+            # All tasks configured
+            self._data[CONF_CARE_TASKS] = self._configured_tasks
+            return self.async_create_entry(
+                title=f"{self._data[CONF_LOCATION]} {self._data[CONF_PLANT_NAME]}",
+                data=self._data,
+            )
+
+        # Show interval config for current task
+        task = self._selected_tasks[self._care_task_index]
+        step_num = self._care_task_index + 1
+        total = len(self._selected_tasks)
+
+        return self.async_show_form(
+            step_id="care_interval",
+            data_schema=vol.Schema({
+                vol.Required(
+                    "interval", default=task["interval_days"]
+                ): NumberSelector(
+                    NumberSelectorConfig(
+                        min=1,
+                        max=365,
+                        step=1,
+                        mode=NumberSelectorMode.BOX,
+                        unit_of_measurement="Tage",
+                    )
+                ),
+            }),
+            description_placeholders={
+                "task_name": task["name"],
+                "step_num": str(step_num),
+                "total": str(total),
+                "default_interval": str(task["interval_days"]),
+            },
         )

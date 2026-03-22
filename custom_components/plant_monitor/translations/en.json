@@ -27,7 +27,17 @@
       },
       "care": {
         "title": "Care Tasks",
-        "description": "Configure care tasks and their intervals. Uncheck tasks you don't need."
+        "description": "Select which care tasks you want to track for this plant. The suggested tasks and intervals are based on the specific needs of your {plant_name}.",
+        "data": {
+          "selected_tasks": "Active Care Tasks"
+        }
+      },
+      "care_interval": {
+        "title": "{task_name} — Interval ({step_num}/{total})",
+        "description": "How often should \"{task_name}\" be done? The recommended interval is {default_interval} days.",
+        "data": {
+          "interval": "Interval"
+        }
       }
     }
   }

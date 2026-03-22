@@ -27,7 +27,17 @@
       },
       "care": {
         "title": "Pflegeaufgaben",
-        "description": "Konfiguriere Pflegeaufgaben und ihre Intervalle. Deaktiviere Aufgaben die du nicht brauchst."
+        "description": "Wähle die Pflegeaufgaben die du tracken möchtest. Die vorgeschlagenen Aufgaben und Intervalle basieren auf den spezifischen Bedürfnissen deiner {plant_name}.",
+        "data": {
+          "selected_tasks": "Aktive Pflegeaufgaben"
+        }
+      },
+      "care_interval": {
+        "title": "{task_name} — Intervall ({step_num}/{total})",
+        "description": "Wie oft soll \"{task_name}\" durchgeführt werden? Das empfohlene Intervall beträgt {default_interval} Tage.",
+        "data": {
+          "interval": "Intervall"
+        }
       }
     }
   }
