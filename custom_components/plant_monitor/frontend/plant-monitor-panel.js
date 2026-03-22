@@ -23,14 +23,14 @@ class PlantMonitorPanel extends HTMLElement {
       this._loadPlants();
     }
 
-    // Update child cards
+    // Update child cards (smart update, no re-render)
     this.shadowRoot.querySelectorAll("plant-monitor-card").forEach((card) => {
       card.hass = hass;
     });
 
-    // Re-render popup if open (to update live values)
+    // Update popup values if open (smart update, no DOM rebuild)
     if (this._selectedPlant) {
-      this._renderPopup();
+      this._updatePopupValues();
     }
   }
 
@@ -540,7 +540,7 @@ class PlantMonitorPanel extends HTMLElement {
           <div class="sensor-row">
             <span class="sensor-label">Temperatur</span>
             <span class="sensor-value">
-              ${temp.toFixed(1)}°C
+              <span data-popup="temp">${temp.toFixed(1)}°C</span>
               ${info.temperature ? `<span class="status-badge status-${tempStatus}">${tempBadge}</span>` : ''}
             </span>
           </div>
@@ -551,7 +551,7 @@ class PlantMonitorPanel extends HTMLElement {
           <div class="sensor-row">
             <span class="sensor-label">Bodenfeuchtigkeit</span>
             <span class="sensor-value">
-              ${Math.round(moisture)}%
+              <span data-popup="moisture">${Math.round(moisture)}%</span>
               ${info.soil_moisture ? `<span class="status-badge status-${moistStatus}">${moistBadge}</span>` : ''}
             </span>
           </div>
@@ -561,7 +561,7 @@ class PlantMonitorPanel extends HTMLElement {
         ${battery !== null ? `
           <div class="sensor-row">
             <span class="sensor-label">Batterie</span>
-            <span class="sensor-value">${Math.round(battery)}%</span>
+            <span class="sensor-value"><span data-popup="battery">${Math.round(battery)}%</span></span>
           </div>
         ` : ''}
 
@@ -646,6 +646,29 @@ class PlantMonitorPanel extends HTMLElement {
         }
       });
     });
+  }
+
+  /** Smart update — only patch values in existing popup DOM */
+  _updatePopupValues() {
+    const plant = this._selectedPlant;
+    if (!plant) return;
+    const popup = this.shadowRoot.getElementById("popup-content");
+    if (!popup) return;
+
+    const config = plant.config;
+    const entities = config.entities || {};
+    const temp = this._getStateValue(entities.temperature);
+    const moisture = this._getStateValue(entities.soil_moisture);
+    const battery = this._getStateValue(entities.battery);
+
+    const el = (sel) => popup.querySelector(sel);
+    const tempEl = el('[data-popup="temp"]');
+    const moistEl = el('[data-popup="moisture"]');
+    const battEl = el('[data-popup="battery"]');
+
+    if (tempEl && temp !== null) tempEl.textContent = `${temp.toFixed(1)}°C`;
+    if (moistEl && moisture !== null) moistEl.textContent = `${Math.round(moisture)}%`;
+    if (battEl && battery !== null) battEl.textContent = `${Math.round(battery)}%`;
   }
 
   _getStateValue(entityId) {

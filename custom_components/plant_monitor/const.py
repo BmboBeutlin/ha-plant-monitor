@@ -1,7 +1,7 @@
 """Constants for Plant Monitor integration."""
 
 DOMAIN = "plant_monitor"
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 URL_BASE = "/plant_monitor"
 
 # Config entry keys
