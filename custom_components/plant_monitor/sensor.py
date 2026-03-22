@@ -16,9 +16,6 @@ from .entity import PlantMonitorEntity
 
 _LOGGER = logging.getLogger(__name__)
 
-# Update countdown sensors every hour
-UPDATE_INTERVAL = datetime.min.replace(hour=1) - datetime.min
-
 
 async def async_setup_entry(
     hass: HomeAssistant,

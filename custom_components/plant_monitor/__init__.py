@@ -5,7 +5,11 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
+from typing import Any
 
+import voluptuous as vol
+
+from homeassistant.components import panel_custom, websocket_api
 from homeassistant.components.http import StaticPathConfig
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -24,10 +28,8 @@ from .const import (
 
 _LOGGER = logging.getLogger(__name__)
 
-type PlantMonitorConfigEntry = ConfigEntry
 
-
-async def async_setup(hass: HomeAssistant, config: dict) -> bool:
+async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
     """Set up Plant Monitor integration (once, not per entry)."""
     hass.data.setdefault(DOMAIN, {
         "library": {},
@@ -52,7 +54,7 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
         return False
 
     # Set up persistent storage for care log
-    store = Store(hass, STORAGE_VERSION, STORAGE_KEY)
+    store: Store = Store(hass, STORAGE_VERSION, STORAGE_KEY)
     hass.data[DOMAIN]["store"] = store
     stored_data = await store.async_load()
     if stored_data:
@@ -70,20 +72,20 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
         ])
         hass.data[DOMAIN]["frontend_registered"] = True
 
-    # Register panel
-    hass.components.frontend.async_register_built_in_panel(
-        component_name="custom",
-        sidebar_title="Pflanzen",
-        sidebar_icon="mdi:flower",
-        frontend_url_path="plant-monitor",
-        config={
-            "_panel_custom": {
-                "name": "plant-monitor-panel",
-                "module_url": f"{URL_BASE}/frontend/plant-monitor-panel.js?v={VERSION}",
-            }
-        },
-        require_admin=False,
-    )
+    # Register custom panel in sidebar
+    try:
+        await panel_custom.async_register_panel(
+            hass,
+            frontend_url_path="plant-monitor",
+            webcomponent_name="plant-monitor-panel",
+            sidebar_title="Pflanzen",
+            sidebar_icon="mdi:flower",
+            module_url=f"{URL_BASE}/frontend/plant-monitor-panel.js?v={VERSION}",
+            require_admin=False,
+            config={},
+        )
+    except Exception:
+        _LOGGER.exception("Failed to register panel")
 
     # Register WebSocket API
     _register_websocket_api(hass)
@@ -91,7 +93,7 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
     return True
 
 
-async def async_setup_entry(hass: HomeAssistant, entry: PlantMonitorConfigEntry) -> bool:
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up a Plant Monitor config entry."""
     species_id = entry.data[CONF_PLANT_SPECIES]
     library = hass.data[DOMAIN]["library"]
@@ -117,7 +119,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: PlantMonitorConfigEntry)
     return True
 
 
-async def async_unload_entry(hass: HomeAssistant, entry: PlantMonitorConfigEntry) -> bool:
+async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Unload a Plant Monitor config entry."""
     unload_ok = await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
     if unload_ok:
@@ -133,14 +135,15 @@ def _load_json(path: Path) -> list:
 
 def _register_websocket_api(hass: HomeAssistant) -> None:
     """Register WebSocket commands for the frontend."""
-    from homeassistant.components import websocket_api
 
     @websocket_api.websocket_command({
-        "type": "plant_monitor/get_plants",
+        vol.Required("type"): "plant_monitor/get_plants",
     })
     @websocket_api.async_response
     async def ws_get_plants(
-        hass: HomeAssistant, connection: websocket_api.ActiveConnection, msg: dict
+        hass: HomeAssistant,
+        connection: websocket_api.ActiveConnection,
+        msg: dict[str, Any],
     ) -> None:
         """Return all configured plants with library data."""
         entries = hass.data[DOMAIN]["entries"]
@@ -160,13 +163,15 @@ def _register_websocket_api(hass: HomeAssistant) -> None:
         connection.send_result(msg["id"], {"plants": plants})
 
     @websocket_api.websocket_command({
-        "type": "plant_monitor/log_care",
-        "entry_id": str,
-        "task_id": str,
+        vol.Required("type"): "plant_monitor/log_care",
+        vol.Required("entry_id"): str,
+        vol.Required("task_id"): str,
     })
     @websocket_api.async_response
     async def ws_log_care(
-        hass: HomeAssistant, connection: websocket_api.ActiveConnection, msg: dict
+        hass: HomeAssistant,
+        connection: websocket_api.ActiveConnection,
+        msg: dict[str, Any],
     ) -> None:
         """Log a care task as completed."""
         from datetime import datetime, timezone

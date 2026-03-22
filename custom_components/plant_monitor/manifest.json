@@ -1,12 +1,12 @@
 {
   "domain": "plant_monitor",
   "name": "Plant Monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "documentation": "https://github.com/BmboBeutlin/ha-plant-monitor",
   "issue_tracker": "https://github.com/BmboBeutlin/ha-plant-monitor/issues",
   "codeowners": ["@BmboBeutlin"],
   "config_flow": true,
-  "dependencies": ["frontend", "http"],
+  "dependencies": ["frontend", "http", "panel_custom", "websocket_api"],
   "iot_class": "local_polling",
   "integration_type": "service"
 }
