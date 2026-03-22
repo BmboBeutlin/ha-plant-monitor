@@ -252,6 +252,15 @@ class PlantMonitorPanel extends HTMLElement {
           border-radius: 4px;
           font-weight: 600;
         }
+        .photo-upload-btn {
+          position: absolute; top: 10px; left: 10px;
+          width: 32px; height: 32px; border-radius: 50%;
+          background: rgba(0,0,0,0.5); border: none; color: #fff;
+          font-size: 1rem; cursor: pointer; display: flex;
+          align-items: center; justify-content: center;
+          transition: background 0.2s;
+        }
+        .photo-upload-btn:hover { background: rgba(0,0,0,0.7); }
         .status-ok { background: rgba(58,154,92,0.2); color: #3a9a5c; }
         .status-low { background: rgba(200,160,40,0.2); color: #c8a028; }
         .status-high { background: rgba(196,48,48,0.2); color: #c43030; }
@@ -523,11 +532,25 @@ class PlantMonitorPanel extends HTMLElement {
       `;
     }).join('');
 
+    const photoUrl = plant.photo_url || null;
+    const plantIcon = window.getPlantIcon ? window.getPlantIcon(info) : '';
+
     popup.innerHTML = `
       <div class="popup-header">
-        <img class="popup-image" src="${info.image_url || ''}" alt="${info.common_name || ''}"
-             onerror="this.style.display='none'">
+        ${photoUrl
+          ? `<img class="popup-image" src="${photoUrl}" alt="${config.plant_name || ''}"
+               style="filter: contrast(1.1) saturate(0.85) brightness(0.9);">`
+          : `<div class="popup-image" style="height:180px;display:flex;align-items:center;justify-content:center;
+               background:linear-gradient(135deg,#1e2229,#182018);">
+               <div style="width:120px;height:120px;">${plantIcon}</div>
+             </div>`
+        }
         <button class="popup-close" id="popup-close-btn">✕</button>
+        <label class="photo-upload-btn" id="photo-upload-label" title="Foto hochladen">
+          📷
+          <input type="file" accept="image/*" id="photo-upload-input"
+                 style="display:none" data-entry-id="${plant.entry_id}">
+        </label>
         <div class="popup-name-overlay">
           <div class="popup-plant-name">${config.plant_name || ''}</div>
           <div class="popup-species">${info.scientific_name || ''}</div>
@@ -618,6 +641,37 @@ class PlantMonitorPanel extends HTMLElement {
 
     // Event listeners
     popup.querySelector("#popup-close-btn").addEventListener("click", () => this._closePopup());
+
+    // Photo upload handler
+    const uploadInput = popup.querySelector("#photo-upload-input");
+    if (uploadInput) {
+      uploadInput.addEventListener("change", async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const entryId = uploadInput.dataset.entryId;
+
+        try {
+          const token = this._hass.auth.data.access_token;
+          const resp = await fetch(`/api/plant_monitor/upload/${entryId}`, {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${token}`,
+              "Content-Type": file.type,
+            },
+            body: file,
+          });
+          const result = await resp.json();
+          if (result.success) {
+            plant.photo_url = result.url + "?t=" + Date.now();
+            this._renderPopup();
+            this._render();
+            this._openPopup(plant);
+          }
+        } catch (err) {
+          console.error("Upload failed:", err);
+        }
+      });
+    }
 
     popup.querySelectorAll(".care-btn").forEach(btn => {
       btn.addEventListener("click", async (e) => {

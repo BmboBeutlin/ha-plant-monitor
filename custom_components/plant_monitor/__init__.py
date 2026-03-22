@@ -9,8 +9,10 @@ from typing import Any
 
 import voluptuous as vol
 
+from aiohttp import web
+
 from homeassistant.components import panel_custom, websocket_api
-from homeassistant.components.http import StaticPathConfig
+from homeassistant.components.http import HomeAssistantView, StaticPathConfig
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.storage import Store
@@ -90,6 +92,13 @@ async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
     # Register WebSocket API
     _register_websocket_api(hass)
 
+    # Register photo upload endpoint
+    _register_photo_upload(hass)
+
+    # Ensure photo directory exists
+    photo_dir = Path(hass.config.path("www")) / "plant_monitor"
+    await hass.async_add_executor_job(photo_dir.mkdir, 0o755, True, True)
+
     return True
 
 
@@ -127,6 +136,65 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return unload_ok
 
 
+def _register_photo_upload(hass: HomeAssistant) -> None:
+    """Register HTTP endpoint for photo uploads."""
+    hass.http.register_view(PlantPhotoUploadView)
+
+
+class PlantPhotoUploadView(HomeAssistantView):
+    """HTTP view for plant photo upload."""
+
+    url = "/api/plant_monitor/upload/{entry_id}"
+    name = "api:plant_monitor:upload"
+    requires_auth = True
+
+    async def post(self, request: web.Request, entry_id: str) -> web.Response:
+        """Handle POST upload."""
+        hass = request.app["hass"]
+        if entry_id not in hass.data[DOMAIN].get("entries", {}):
+            return self.json({"error": "Invalid entry_id"}, status_code=400)
+
+        # Read raw body (simpler than multipart for single file)
+        data = await request.read()
+        if len(data) > 10 * 1024 * 1024:
+            return self.json({"error": "File too large (max 10MB)"}, status_code=413)
+        if len(data) == 0:
+            return self.json({"error": "No data"}, status_code=400)
+
+        content_type = request.content_type or "image/jpeg"
+        ext = {
+            "image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp",
+        }.get(content_type, ".jpg")
+
+        photo_dir = Path(hass.config.path("www")) / "plant_monitor"
+        await hass.async_add_executor_job(_ensure_dir, photo_dir)
+
+        # Remove old photos
+        for old_ext in (".jpg", ".jpeg", ".png", ".webp"):
+            old_file = photo_dir / f"{entry_id}{old_ext}"
+            if old_file.exists():
+                await hass.async_add_executor_job(old_file.unlink)
+
+        photo_path = photo_dir / f"{entry_id}{ext}"
+        await hass.async_add_executor_job(_write_file, photo_path, data)
+
+        return self.json({
+            "success": True,
+            "url": f"/local/plant_monitor/{entry_id}{ext}",
+        })
+
+
+def _ensure_dir(path: Path) -> None:
+    """Ensure directory exists."""
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def _write_file(path: Path, data: bytes) -> None:
+    """Write binary data to file."""
+    with open(path, "wb") as f:
+        f.write(data)
+
+
 def _load_json(path: Path) -> list:
     """Load JSON file from disk."""
     with open(path, encoding="utf-8") as f:
@@ -150,13 +218,23 @@ def _register_websocket_api(hass: HomeAssistant) -> None:
         care_log = hass.data[DOMAIN]["care_log"]
         plants = []
 
+        photo_dir = Path(hass.config.path("www")) / "plant_monitor"
         for entry_id, entry_data in entries.items():
+            # Check if a photo exists
+            photo_url = None
+            for ext in (".jpg", ".jpeg", ".png", ".webp"):
+                photo_path = photo_dir / f"{entry_id}{ext}"
+                if photo_path.exists():
+                    photo_url = f"/local/plant_monitor/{entry_id}{ext}"
+                    break
+
             plant = {
                 "entry_id": entry_id,
                 "config": entry_data["config"],
                 "plant_info": entry_data["plant_info"],
                 "care_tasks": entry_data["care_tasks"],
                 "care_log": care_log.get(entry_id, {}),
+                "photo_url": photo_url,
             }
             plants.append(plant)
 
@@ -198,5 +276,29 @@ def _register_websocket_api(hass: HomeAssistant) -> None:
 
         connection.send_result(msg["id"], {"success": True})
 
+    @websocket_api.websocket_command({
+        vol.Required("type"): "plant_monitor/delete_photo",
+        vol.Required("entry_id"): str,
+    })
+    @websocket_api.async_response
+    async def ws_delete_photo(
+        hass: HomeAssistant,
+        connection: websocket_api.ActiveConnection,
+        msg: dict[str, Any],
+    ) -> None:
+        """Delete plant photo."""
+        entry_id = msg["entry_id"]
+        photo_dir = Path(hass.config.path("www")) / "plant_monitor"
+
+        deleted = False
+        for ext in (".jpg", ".jpeg", ".png", ".webp"):
+            photo_path = photo_dir / f"{entry_id}{ext}"
+            if await hass.async_add_executor_job(photo_path.exists):
+                await hass.async_add_executor_job(photo_path.unlink)
+                deleted = True
+
+        connection.send_result(msg["id"], {"success": deleted})
+
     websocket_api.async_register_command(hass, ws_get_plants)
     websocket_api.async_register_command(hass, ws_log_care)
+    websocket_api.async_register_command(hass, ws_delete_photo)

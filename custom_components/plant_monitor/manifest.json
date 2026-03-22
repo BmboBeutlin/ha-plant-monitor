@@ -1,7 +1,7 @@
 {
   "domain": "plant_monitor",
   "name": "Plant Monitor",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "documentation": "https://github.com/BmboBeutlin/ha-plant-monitor",
   "issue_tracker": "https://github.com/BmboBeutlin/ha-plant-monitor/issues",
   "codeowners": ["@BmboBeutlin"],
